@@ -15,7 +15,7 @@ The purpose of these two weeks was to familiarize myself with note-taking and da
 
 I began with R, using *R Markdown (.Rmd)* to document my work.
 
-To use R Markdown effectively in RStudio, one should first create an **R Project** within the directory containing the project. RStudio will automatically generate project-related files: =.Rproj.user=, =.RData=, =.Rhistory=, =<project_name>.Rproj=.
+To use R Markdown effectively in RStudio, one should first create an *R Project* within the directory containing the project. RStudio will automatically generate project-related files: =.Rproj.user=, =.RData=, =.Rhistory=, =<project_name>.Rproj=.
 
 Once the project is set up, one can open RStudio, create a new =.Rmd= file, and start taking notes.
 
