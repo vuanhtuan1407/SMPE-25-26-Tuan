@@ -9,17 +9,17 @@ This file contains progress reports for the SMPE class.
 ** Date: 2025-10-08
 *Report from 2025-09-25 to 2025-10-08*
 
-The purpose of these two weeks was to familiarize myself with note-taking and data analysis tools (Jupyter, R, and Org-mode) while practicing through the **M2R-ParallelQuicksort** project. This report focuses specifically on **R** and **Org-mode**.
+The purpose of these two weeks was to familiarize myself with note-taking and data analysis tools (Jupyter, R, and Org-mode) while practicing through the [[https://github.com/alegrand/M2R-ParallelQuicksort][*M2R-ParallelQuicksort*]] project. This report focuses specifically on *R* and *Org-mode*.
 
 *** Note-Taking with R
 
-I began with R, using **R Markdown (=.Rmd=)** to document my work.
+I began with R, using *R Markdown (=.Rmd=)* to document my work.
 
 To use R Markdown effectively in RStudio, one should first create an **R Project** within the directory containing the project. RStudio will automatically generate project-related files: =.Rproj.user=, =.RData=, =.Rhistory=, =<project_name>.Rproj=.
 
 Once the project is set up, one can open RStudio, create a new =.Rmd= file, and start taking notes.
 
-R Markdown syntax largely follows standard **Markdown** conventions.  
+R Markdown syntax largely follows standard *Markdown* conventions.  
 
 Example: [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][See =Report_2025-10-08.Rmd= example on GitHub]]
 
@@ -52,17 +52,17 @@ A detailed guide on installing and configuring Org-mode with Emacs is available 
 
 **** Basic Syntax in Org-mode
 
-- **Headers / Sections**: use asterisks (*)
+- *Headers / Sections*: use asterisks (*)
   - Example: =* Header 1=, =** Header 2=, =*** Header 3=
-- **Bullet lists**: - or +  
-- **Numbered lists**: 1., 2., 3.  
-- **Text formatting**:  
+- *Bullet lists*: - or +  
+- *Numbered lists*: 1., 2., 3.  
+- *Text formatting*:  
   - Bold: *bold*  
   - Italic: /italic/  
   - Underline: _underline_  
-- **Links**: =[[URL][Link Text]]=
-- **Inline code**: =code=  
-- **Preformatted text / Verbatim**: ~text~  
+- *Links*: =[[URL][Link Text]]=
+- *Inline code*: =code=  
+- *Preformatted text / Verbatim*: ~text~  
 
 **** Code Blocks in Org-mode
 
