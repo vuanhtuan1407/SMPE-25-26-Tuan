@@ -21,7 +21,7 @@ Once the project is set up, one can open RStudio, create a new =.Rmd= file, and 
 
 R Markdown syntax largely follows standard *Markdown* conventions.  
 
-Example: [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][See =Report_2025-10-08.Rmd= example on GitHub]]
+Example: [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][See =Report_2025-10-08.Rmd= on GitHub]]
 
 Unlike =Report_2025-10-08.Rmd= files, these documents are not automatically rendered on GitHub. However, they can be exported to =PDF= or =HTML= to view formatted content.
 
