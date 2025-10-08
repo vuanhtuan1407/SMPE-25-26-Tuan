@@ -4,7 +4,7 @@
 #+OPTIONS: toc:nil num:nil
 
 * Project Progress Reports
-  This file contains progress reports for SMPE class.
+This file contains progress reports for the SMPE class.
 
 ** Date: 2025-10-08
 *Report from 2025-09-25 to 2025-10-08*
@@ -13,26 +13,21 @@ The purpose of these two weeks was to familiarize myself with note-taking and da
 
 *** Note-Taking with R
 
-I began with R, using **R Markdown (.Rmd)** to document my work.
+I began with R, using **R Markdown (=.Rmd=)** to document my work.
 
-To use R Markdown effectively in RStudio, one should first create an **R Project** within the directory containing the project. RStudio will automatically generate project-related files:
+To use R Markdown effectively in RStudio, one should first create an **R Project** within the directory containing the project. RStudio will automatically generate project-related files: =.Rproj.user=, =.RData=, =.Rhistory=, =<project_name>.Rproj=.
 
-- `.Rproj.user`
-- `.RData`
-- `.Rhistory`
-- `<project_name>.Rproj`
-
-Once the project is set up, one can open RStudio, create a new `.Rmd` file, and start taking notes.
+Once the project is set up, one can open RStudio, create a new =.Rmd= file, and start taking notes.
 
 R Markdown syntax largely follows standard **Markdown** conventions.  
 
-Example: [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][See example on GitHub]]
+Example: [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][See =Report_2025-10-08.Rmd= example on GitHub]]
 
-Unlike `.md` files, `.Rmd` files are not automatically rendered on GitHub. However, one can overcome this limitation by exporting the document to `.pdf` or `.html`.
+Unlike =Report_2025-10-08.Rmd= files, these documents are not automatically rendered on GitHub. However, they can be exported to =PDF= or =HTML= to view formatted content.
 
 **** Exporting to PDF
 
-To export a document to PDF, it is necessary to have **LaTeX** installed.  
+To export a document to =.pdf=, it is necessary to have **LaTeX** installed.  
 On Linux, texlive can be installed as follows:
 
 #+begin_src sh
@@ -42,7 +37,7 @@ sudo apt install texlive-full
 
 Once all required tools and libraries are installed, open the R terminal and run:
 
-#+begin_src r
+#+begin_src R
 # Render the Rmd file to PDF
 rmarkdown::render("Report_2025-10-08.Rmd", output_format = "pdf_document")
 
@@ -52,83 +47,76 @@ rmarkdown::render("Report_2025-10-08.Rmd", output_format = "html_document")
 
 *** Note-Taking with Org-mode
 
-Using Org-mode can be slightly challenging for beginners. In this project, I used **Emacs** to edit `.org` files.  
+Using Org-mode can be slightly challenging for beginners. In this project, I used **Emacs** to edit =.org= files.  
 A detailed guide on installing and configuring Org-mode with Emacs is available here: [[https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master//module2/ressources/emacs_orgmode.org][Org-mode setup guide]]
 
 **** Basic Syntax in Org-mode
 
-- **Headers / Sections**: use asterisks (`*`)  
-  - Example: `* Header 1`, `** Header 2`, `*** Header 3`  
-- **Bullet lists**: use `-` or `+`  
-- **Numbered lists**: use `1.`, `2.`, `3.`  
+- **Headers / Sections**: use asterisks (*)
+  - Example: =* Header 1=, =** Header 2=, =*** Header 3=
+- **Bullet lists**: - or +  
+- **Numbered lists**: 1., 2., 3.  
 - **Text formatting**:  
-  - Bold: `*bold*`  
-  - Italic: `/italic/`  
-  - Underline: `_underline_`  
-- **Links**: `[[URL][Link Text]]`  
-- **Inline code**: `=code=`  
-- **Preformatted text / Verbatim**: `~text~`  
+  - Bold: *bold*  
+  - Italic: /italic/  
+  - Underline: _underline_  
+- **Links**: =[[URL][Link Text]]=
+- **Inline code**: =code=  
+- **Preformatted text / Verbatim**: ~text~  
 
 **** Code Blocks in Org-mode
 
-Keyboard shortcuts are configured according to the setup guide.
-For examples:
-- `<r + TAB`: insert a standard R code block  
-- `<R + TAB`: insert an R code block that outputs graphics  
+Keyboard shortcuts are configured according to the setup guide.  
+For example:  
+- =<r + TAB=: insert a standard R code block  
+- =<R + TAB=: insert an R code block that outputs graphics  
 
 ***** Important Parameters for Code Blocks
 
-When working with code blocks in Org-mode, several parameters can be specified to control **execution, output, and export behavior**. These parameters can be grouped as follows:
+Several parameters control **execution, output, and export behavior**. They can be grouped as follows:
 
 ****** Execution Control
-- `:session <name>`: Executes the code block within a persistent session, allowing variables and functions to be shared across multiple blocks.
-- `:tangle <file>`: Writes the code in this block to a separate file for later use.
-- `:noweb yes/no`: Enables referencing code from other blocks using `<<block-name>>`.
-- `:eval yes/no`: Controls whether the block is evaluated when exported.
+- =:session name=: Executes the code block within a persistent session.
+- =:tangle filename=: Writes the code block to a separate file.
+- =:noweb yes/no=: Enables referencing code from other blocks using =<<block-name>>=.
+- =:eval yes/no=: Controls whether the block is evaluated on export.
 
 ****** Output Control
-- `:results <type>`: Specifies the type of result displayed.
-  - `output`: Display textual output.
-  - `raw`: Insert raw output without formatting.
-  - `value`: Return the value of the expression.
-  - `graphics`: Display plots or graphical output inline.
-    - **Important Note:** Using `:results graphics` alone may not render correctly in some situations because Org-mode relies on **export backends** (HTML, LaTeX) to capture graphics. Without a file, the plot exists only in R session memory and may not be captured properly.  
-    - **Recommended Practice:** Combine with `:file <filename>` as in `:results graphics file :file "plot.png"`. This ensures:
-      1. The plot is saved to a physical file.
-      2. Org-mode can reference it reliably when exporting.
-      3. Plot dimensions and resolution can be controlled with `:width`, `:height`, and `:dpi`.
-  - `file`: Export output directly to a file without displaying inline.
-- `:exports <what>`: Determines what is exported (`code`, `results`, `both`, `none`).
+- =:results type=: Specifies the type of result displayed.
+  - =output=: textual output  
+  - =raw=: raw output without formatting  
+  - =value=: returns the value of the expression  
+  - =graphics=: display plots inline
+    - **Note:** =:results graphics= alone may not render correctly because Org-mode relies on export backends (=HTML=, =LaTeX=) to capture graphics. Without a file, the plot exists only in R session memory and may not be captured properly.  
+    - **Recommended:** combine with =:file filename= as in =:results graphics file :file plot.png=. This ensures:
+      1. The plot is saved as a physical file.  
+      2. Org-mode references it reliably on export.  
+      3. Plot dimensions and resolution can be controlled with =:width number=, =:height number=, and =:dpi number=.  
+  - =file=: export output directly to a file.  
+- =:exports what=: determines what is exported (=code=, =results=, =both=, =none=).
 
-****** Graphical and Formatting Options
-- `:width <number>`: Specifies the width of graphical output (pixels or inches).
-- `:height <number>`: Specifies the height of graphical output.
-- `:dpi <number>`: Sets the resolution for plots.
-- `:fig-caption <caption>`: Adds a caption to the figure when exported.
-- `:fig-align <left/center/right>`: Aligns the figure in the exported document.
-
-******* Notes:
-- Using `:results graphics file` ensures plots are saved and displayed correctly.
-- Adjust `:width`, `:height`, and `:dpi` to control the quality and size of the exported figure.
+****** Graphical & Formatting Options
+- =:width number=: width of graphical output  
+- =:height number=: height of graphical output  
+- =:dpi number=: resolution  
+- =:fig-caption caption=: caption for exported figure  
+- =:fig-align left/center/right=: figure alignment  
 
 ****** File Handling
-- `:file <filename>`: Directs output or plot to a specific file.
-- `:dir <directory>`: Specifies the directory for file output.
-- `:cache yes/no`: Caches results to avoid re-evaluation on subsequent exports.
+- =:file filename=: directs output or plot to a file  
+- =:dir directory=: specifies directory for output  
+- =:cache yes/no=: caches results to avoid re-evaluation
 
-**** Example of a Graphics Code Block in Org-mode
+**** Example of a Graphics Code Block
 
-#+BEGIN_SRC R :results graphics file :file "plot.png" :width 600 :height 400
+#+begin_src R :results graphics file :file plot.png :width 600 :height 400
 library(ggplot2)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point() +
   theme_minimal()
-#+END_SRC
-
+#+end_src
 
 *** References
 - [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][R Markdown Example]]
 - [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/report.org][Org-mode Example]]
 - [[https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master//module2/ressources/emacs_orgmode.org][Org-mode Setup Guide]]
-
-

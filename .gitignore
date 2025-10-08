@@ -1,0 +1,89 @@
+# Org-mode exports
+*.html
+*.pdf
+*.tex
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Org-mode temporary files
+*~
+.#*
+\#*\#
+*.bak
+*.swp
+*.swo
+*~undo-tree~
+
+# Org-mode cache and generated files
+.org-id-locations
+*.org_archive
+ltximg/
+auto/
+
+# Emacs temporary files
+*~
+\#*\#
+.\#*
+.*.swp
+.*.swo
+*~
+TAGS
+tags
+*.elc
+
+# Emacs backup files
+*~
+*.bak
+\#*\#
+.\#*
+
+# Auto-save files
+\#*\#
+auto-save-list/
+
+# Projectile files
+.projectile
+
+# Directory locals
+.dir-locals.el
+
+# R and RStudio files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Python cache (if using org-babel with Python)
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
