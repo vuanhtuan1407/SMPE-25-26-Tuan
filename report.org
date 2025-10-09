@@ -47,7 +47,7 @@ rmarkdown::render("Report_2025-10-08.Rmd", output_format = "html_document")
 
 *** Note-Taking with Org-mode
 
-Using Org-mode can be slightly challenging for beginners. In this project, I used **Emacs** to edit =.org= files.  
+Using Org-mode can be slightly challenging for beginners. In this project, I used *Emacs* to edit =.org= files.  
 A detailed guide on installing and configuring Org-mode with Emacs is available here: [[https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master//module2/ressources/emacs_orgmode.org][Org-mode setup guide]]
 
 **** Basic Syntax in Org-mode
@@ -87,8 +87,8 @@ Several parameters control **execution, output, and export behavior**. They can 
   - =raw=: raw output without formatting  
   - =value=: returns the value of the expression  
   - =graphics=: display plots inline
-    - **Note:** =:results graphics= alone may not render correctly because Org-mode relies on export backends (=HTML=, =LaTeX=) to capture graphics. Without a file, the plot exists only in R session memory and may not be captured properly.  
-    - **Recommended:** combine with =:file filename= as in =:results graphics file :file plot.png=. This ensures:
+    - *Note:* =:results graphics= alone may not render correctly. I got this notification on console log =Code block preoduced no output=. I don't know why this happend, maybe because of the lack of some supporting packages on Linux.
+    - *Recommended:* combine with =:file filename= as in =:results graphics file :file plot.png=. This ensures:
       1. The plot is saved as a physical file.  
       2. Org-mode references it reliably on export.  
       3. Plot dimensions and resolution can be controlled with =:width number=, =:height number=, and =:dpi number=.  
