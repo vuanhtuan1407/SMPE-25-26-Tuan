@@ -116,7 +116,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   theme_minimal()
 #+end_src
 
-**** Example of a Org-mode report
+**** Example of a Org-mode report: (The R code from Wojciech Łoboda is also in R markdown, so I tried to convert from =.rmd= to =.org= but there still exist some wrong format results)
 [[https://github.com/viniciuslazzari/M2R-ParallelQuicksort/blob/report/report.org][See Org-mode Example]]
 
 *** References
