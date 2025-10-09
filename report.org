@@ -57,12 +57,12 @@ A detailed guide on installing and configuring Org-mode with Emacs is available 
 - *Bullet lists*: - or +  
 - *Numbered lists*: 1., 2., 3.  
 - *Text formatting*:  
-  - Bold: *bold*  
-  - Italic: /italic/  
-  - Underline: _underline_  
+  - Bold: =*bold*=  
+  - Italic: =/italic/=  
+  - Underline: =_underline_=  
 - *Links*: =[[URL][Link Text]]=
-- *Inline code*: =code=  
-- *Preformatted text / Verbatim*: ~text~  
+- *Inline code*: ==code==  
+- *Preformatted text / Verbatim*: =~text~=  
 
 **** Code Blocks in Org-mode
 
