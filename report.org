@@ -73,7 +73,7 @@ For example:
 
 ***** Important Parameters for Code Blocks
 
-Several parameters control **execution, output, and export behavior**. They can be grouped as follows:
+Several parameters control *execution, output, and export behavior*. They can be grouped as follows:
 
 ****** Execution Control
 - =:session name=: Executes the code block within a persistent session.
@@ -115,6 +115,9 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point() +
   theme_minimal()
 #+end_src
+
+**** Example of a Org-mode report
+[[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/report.org][See Org-mode Example]]
 
 *** References
 - [[https://github.com/alegrand/M2R-ParallelQuicksort][M2R-ParallelQuicksort]]
