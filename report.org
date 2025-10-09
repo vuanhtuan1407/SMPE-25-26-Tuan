@@ -9,7 +9,7 @@ This file contains progress reports for the SMPE class.
 ** Date: 2025-10-08
 *Report from 2025-09-25 to 2025-10-08*
 
-The purpose of these two weeks was to familiarize myself with note-taking and data analysis tools (Jupyter, R, and Org-mode) while practicing through the [[https://github.com/alegrand/M2R-ParallelQuicksort][*M2R-ParallelQuicksort*]] project. This report focuses specifically on *R* and *Org-mode*.
+The purpose of these two weeks was to familiarize myself with note-taking and data analysis tools (Jupyter, R, and Org-mode) while practicing through the [[https://github.com/alegrand/M2R-ParallelQuicksort][M2R-ParallelQuicksort]] project. This report focuses specifically on *R* and *Org-mode*.
 
 *** Note-Taking with R
 
