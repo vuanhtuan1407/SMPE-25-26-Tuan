@@ -117,10 +117,10 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 #+end_src
 
 **** Example of a Org-mode report
-[[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/report.org][See Org-mode Example]]
+[[https://github.com/viniciuslazzari/M2R-ParallelQuicksort/blob/report/report.org][See Org-mode Example]]
 
 *** References
 - [[https://github.com/alegrand/M2R-ParallelQuicksort][M2R-ParallelQuicksort]]
 - [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][R Markdown Example]]
-- [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/report.org][Org-mode Example]]
+- [[https://github.com/viniciuslazzari/M2R-ParallelQuicksort/blob/report/report.org][Org-mode Example]]
 - [[https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master//module2/ressources/emacs_orgmode.org][Org-mode Setup Guide]]
