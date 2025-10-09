@@ -27,8 +27,8 @@ Unlike =Report_2025-10-08.Rmd= files, these documents are not automatically rend
 
 **** Exporting to PDF
 
-To export a document to =.pdf=, it is necessary to have **LaTeX** installed.  
-On Linux, texlive can be installed as follows:
+To export a document to =.pdf=, it is necessary to have *LaTeX* installed.  
+On Linux, =texlive= can be installed as follows:
 
 #+begin_src sh
 sudo apt update
