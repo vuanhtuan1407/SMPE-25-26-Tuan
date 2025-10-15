@@ -124,3 +124,83 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 - [[https://github.com/vuanhtuan1407/M2R-ParallelQuicksort/blob/main/Report_2025-10-08.Rmd][R Markdown Example]]
 - [[https://github.com/viniciuslazzari/M2R-ParallelQuicksort/blob/report/report.org][Org-mode Example]]
 - [[https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master//module2/ressources/emacs_orgmode.org][Org-mode Setup Guide]]
+
+
+** Date: 2025-10-15
+
+*** Basic knownledge
+Graphics are tools to **summarize**, **analyze**, and **communicate** data.  
+A good figure enhances both clarity and scientific quality.
+
+**** Main Goals
+1. **Readability** – Easy to interpret.  
+2. **Intelligibility** – Message is clear, no confusion.
+
+**** Design Principles
+- **Minimize reader effort:** Use direct labels and simple layout.  
+- **Maximize information:** Keep only relevant and meaningful content.  
+- **Minimize ink:** Avoid visual noise (3D, textures, unnecessary elements).  
+- **Occam’s Razor:** If two visuals convey the same info, choose the simpler.  
+- **Common sense:** Match complexity to the audience and context.
+
+**** Criteria for Good Graphics
+
+***** 1. Data
+- Graphic type must match data nature (curve, bar, pie, etc.).  
+- Show uncertainty using **confidence intervals** or **error bars**.  
+- Enough points for curves; proper histogram bins (0–1).  
+- State clearly how data are built (interpolation, regression, etc.).
+
+***** 2. Graphical Objects
+- Readable on screen, paper, and slides.  
+- Clear **axes, units, and scales**.  
+- Use distinct colors and avoid ambiguous crossings.  
+- Grids may help with value estimation.
+
+***** 3. Annotations
+- Axes labeled with quantity and unit.  
+- Standard axis orientation (X left→right, Y bottom→top).  
+- Origin at (0,0) unless justified.  
+- Bars ordered logically (alphabetical, temporal, or best→worst).  
+- Every curve or bar has a **legend or direct label**.
+
+***** 4. Information
+- Curves must share the same scale.  
+- Limit to **≤6 curves** per graph.  
+- Each visual object must add information; remove redundancy.  
+- Use **error bars** when showing averages.  
+- The figure must answer a **specific question**, not exist for decoration.
+
+***** 5. Context
+- All symbols defined and referenced in text.  
+- Title clear, self-contained, and informative.  
+- Figure referenced and discussed in text.  
+- Graphic adds value beyond what text or tables can show.
+
+**** Synthesis
+Before designing or evaluating a graphic, always ask:  
+**Who is the reader? What do they need to understand? Why should they look at this figure?**
+
+Follow these general principles:
+- **Minimize reader effort:** The viewer should grasp the main idea instantly.  
+- **Maximize relevant information:** Present data that support your scientific message.  
+- **Minimize unnecessary ink:** Every visual element must serve a purpose.  
+- **Use traditional conventions:** Colors, scales, and symbols should follow standard reading habits.  
+- **Try multiple versions:** Compare several visualizations before choosing the best.  
+
+Avoid these common errors:
+- Too many graphical objects or overlapping curves.  
+- Confusing scales or inconsistent units.  
+- Cryptic notations or symbols not defined.  
+- Decorative but non-informative elements.
+
+Key principles to remember:
+- **Occam’s Razor:** Between two visuals with the same meaning, the simplest wins.  
+- **Dijkstra’s Completion Principle:** When nothing can be removed without losing meaning, the figure is complete.  
+- **Common sense:** Use the right level of detail and complexity for your audience.
+
+A good graphic is not just informative—it must also be **clear, elegant, accurate, and necessary**.
+
+
+*** Practice
+
