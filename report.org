@@ -204,3 +204,9 @@ A good graphic is not just informative—it must also be **clear, elegant, accur
 
 *** Practice
 
+#+begin_src R :results output graphics file :file (org-babel-temp-file "figure" ".png") :exports both :width 600 :height 400 :session *R*
+hist(rnorm(500))
+#+end_src
+
+#+RESULTS:
+[[file:/tmp/babel-LPhfC7/figurewZ73jh.png]]
