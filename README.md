@@ -1,4 +1,4 @@
-# SMPE-25-26-Tuan
+# SMPE-25-26-Tuan (2026-01-14)
 
 1. Class report: [report.org](https://github.com/vuanhtuan1407/SMPE-25-26-Tuan/blob/main/report.org)
 2. Good Graphics: [good_graphic.md](https://github.com/vuanhtuan1407/SMPE-25-26-Tuan/blob/main/good_graphics.md)
