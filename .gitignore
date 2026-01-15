@@ -1,6 +1,7 @@
 # Org-mode exports
 *.html
 *.pdf
+!MOOC-CO2-slides.pdf
 *.tex
 *.aux
 *.log
