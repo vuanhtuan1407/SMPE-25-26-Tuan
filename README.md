@@ -6,3 +6,4 @@
 (**Note**: Please find the analysis of CI Estimation and Linear Model at the bottom of the report file)
 4. Challenger (Updated): [Challenger](https://github.com/vuanhtuan1407/SMPE-25-26-Tuan/blob/main/challenger_en_updated.ipynb)
 5. Peer evaluation: [Subject 1 - Atmospheric CO2 Concentration Analysis](https://github.com/vuanhtuan1407/co2-analysis/blob/main/co2-analysis.org)
+6. Slide for peer review subject: [MOOC-CO2](https://github.com/vuanhtuan1407/SMPE-25-26-Tuan/blob/main/MOOC-CO2-slides.pdf)
